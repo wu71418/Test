@@ -1,11 +1,7 @@
 <?php
     $Num_1=$_POST['Num1'];
     $Num_2=$_POST['Num2'];
-
-    echo $Num_1."<br>".$Num_2;
-
-    echo "<br>";
-
+    
     function Fraction($Num_1,$Num_2){
         $result='';
         for($i=2;$i<=$Num_1;$i++)
@@ -20,5 +16,5 @@
         return $result;
     }
 
-    echo Fraction($Num_1,$Num_2);
+    echo $Num_1."/".$Num_2."約分後為".Fraction($Num_1,$Num_2);
 ?>
